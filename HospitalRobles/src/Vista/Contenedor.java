@@ -5,6 +5,9 @@
  */
 package Vista;
 
+import java.awt.Image;
+import java.awt.Toolkit;
+
 /**
  *
  * @author Rosario
@@ -16,6 +19,14 @@ public class Contenedor extends javax.swing.JFrame {
      */
     public Contenedor() {
         initComponents();
+    }
+    @Override
+    public Image getIconImage() {
+        Image retValue = Toolkit.getDefaultToolkit().
+                getImage(ClassLoader.getSystemResource("Imagenes/hospital.png"));
+
+
+        return retValue;
     }
 
     /**
@@ -42,6 +53,8 @@ public class Contenedor extends javax.swing.JFrame {
         jMenuItem5.setText("jMenuItem5");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setIconImage(getIconImage());
+        setIconImages(getIconImages());
 
         jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sesión.png"))); // NOI18N
 
