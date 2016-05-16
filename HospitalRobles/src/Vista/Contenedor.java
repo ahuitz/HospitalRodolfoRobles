@@ -55,11 +55,18 @@ public class Contenedor extends javax.swing.JFrame {
         jMenuItem5.setText("jMenuItem5");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Hospital Rodolfo Robles");
         setIconImage(getIconImage());
         setIconImages(getIconImages());
+        setLocation(new java.awt.Point(100, 30));
+        setPreferredSize(new java.awt.Dimension(1020, 650));
+
+        jMenuBar1.setFont(new java.awt.Font("Calibri Light", 0, 20)); // NOI18N
 
         jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sesión.png"))); // NOI18N
+        jMenu1.setToolTipText("Sesión");
 
+        jMenuItem6.setFont(new java.awt.Font("Calibri Light", 0, 20)); // NOI18N
         jMenuItem6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Actions-exit-24.png"))); // NOI18N
         jMenuItem6.setText("Cerrar Sesión");
         jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
@@ -72,10 +79,13 @@ public class Contenedor extends javax.swing.JFrame {
         jMenuBar1.add(jMenu1);
 
         jMenu6.setText("Inventario");
+        jMenu6.setFont(new java.awt.Font("Calibri Light", 0, 20)); // NOI18N
         jMenuBar1.add(jMenu6);
 
         jMenu3.setText("Compras");
+        jMenu3.setFont(new java.awt.Font("Calibri Light", 0, 20)); // NOI18N
 
+        jMenuItem1.setFont(new java.awt.Font("Calibri Light", 0, 20)); // NOI18N
         jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/proveedor.png"))); // NOI18N
         jMenuItem1.setText("Proveedor");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
@@ -85,6 +95,7 @@ public class Contenedor extends javax.swing.JFrame {
         });
         jMenu3.add(jMenuItem1);
 
+        jMenuItem2.setFont(new java.awt.Font("Calibri Light", 0, 20)); // NOI18N
         jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/comprar.png"))); // NOI18N
         jMenuItem2.setText("Comprar");
         jMenu3.add(jMenuItem2);
@@ -92,11 +103,14 @@ public class Contenedor extends javax.swing.JFrame {
         jMenuBar1.add(jMenu3);
 
         jMenu2.setText("Descargas");
+        jMenu2.setFont(new java.awt.Font("Calibri Light", 0, 20)); // NOI18N
 
+        jMenuItem3.setFont(new java.awt.Font("Calibri Light", 0, 20)); // NOI18N
         jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/departamento24.png"))); // NOI18N
         jMenuItem3.setText("Departamentos");
         jMenu2.add(jMenuItem3);
 
+        jMenuItem4.setFont(new java.awt.Font("Calibri Light", 0, 20)); // NOI18N
         jMenuItem4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/requisicion24.png"))); // NOI18N
         jMenuItem4.setText("Requisición");
         jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
@@ -109,14 +123,18 @@ public class Contenedor extends javax.swing.JFrame {
         jMenuBar1.add(jMenu2);
 
         jMenu4.setText("Kardex");
+        jMenu4.setFont(new java.awt.Font("Calibri Light", 0, 20)); // NOI18N
         jMenuBar1.add(jMenu4);
 
         jMenu5.setText("Reportes");
+        jMenu5.setFont(new java.awt.Font("Calibri Light", 0, 20)); // NOI18N
 
+        jMenuItem7.setFont(new java.awt.Font("Calibri Light", 0, 20)); // NOI18N
         jMenuItem7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/reporteCompra24.png"))); // NOI18N
         jMenuItem7.setText("Compras");
         jMenu5.add(jMenuItem7);
 
+        jMenuItem8.setFont(new java.awt.Font("Calibri Light", 0, 20)); // NOI18N
         jMenuItem8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/reportProducto24.png"))); // NOI18N
         jMenuItem8.setText("Productos");
         jMenu5.add(jMenuItem8);
@@ -129,11 +147,11 @@ public class Contenedor extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 485, Short.MAX_VALUE)
+            .addGap(0, 1016, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 335, Short.MAX_VALUE)
+            .addGap(0, 584, Short.MAX_VALUE)
         );
 
         pack();
