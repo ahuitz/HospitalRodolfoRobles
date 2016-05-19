@@ -67,15 +67,11 @@ public class Contenedor extends javax.swing.JFrame {
         jDesktopPane1.setLayout(jDesktopPane1Layout);
         jDesktopPane1Layout.setHorizontalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                .addGap(0, Short.MAX_VALUE, Short.MAX_VALUE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGap(0, Short.MAX_VALUE, Short.MAX_VALUE)
         );
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                .addGap(0, Short.MAX_VALUE, Short.MAX_VALUE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGap(0, Short.MAX_VALUE, Short.MAX_VALUE)
         );
 
         jMenuBar1.setFont(new java.awt.Font("Calibri Light", 0, 20)); // NOI18N
@@ -195,6 +191,9 @@ public class Contenedor extends javax.swing.JFrame {
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
         // TODO add your handling code here:
+        Requisicion Vreq=new Requisicion();
+        this.jDesktopPane1.add(Vreq);
+        Vreq.show();
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
@@ -204,8 +203,7 @@ public class Contenedor extends javax.swing.JFrame {
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
         Proveedor Vprov=new Proveedor();
-        this.jDesktopPane1.add(Vprov);
-       
+        this.jDesktopPane1.add(Vprov);       
         Vprov.show();
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
