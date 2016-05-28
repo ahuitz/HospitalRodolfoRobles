@@ -10,5 +10,5 @@ package Tablas;
  * @author Yeisca
  */
 public class Tproducto {
-    
+    private int id;
 }
